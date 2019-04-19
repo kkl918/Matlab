@@ -1,6 +1,6 @@
 function [x,y] = to97(lat,lon)
 % function to97(lat,lon)
-
+%
 % INPUTS:lat, lon
 % OUTPUT:east,north
 
