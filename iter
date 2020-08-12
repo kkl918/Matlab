@@ -1,0 +1,20 @@
+clear all; clc;
+
+A  = [0 -0.6 0.2;0.2857 0 -0.1429;0.1667 0.3333 0];
+
+c  = [0.4;1.8571;3.8333];
+
+x0 = zeros(3,1);
+
+r = iter(A, c, x0,0)
+
+function x1 = iter(A, c, x0, count)
+    x1 = c - A*x0;
+    e  = mean(sqrt((x1 - x0).^2));
+    
+    if  e > 10e-6 && count < 15
+        count = count + 1;
+        x1 = iter(A, c ,x1, count);
+    end
+    
+end
