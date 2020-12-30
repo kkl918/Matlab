@@ -103,18 +103,3 @@ grid;
 xlabel('Time(sec)');
 ylabel('Velocity Error(feet/sec)');
 title('Figure(4) - Veocity Estamation Error)');
-
-
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
